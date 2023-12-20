@@ -1,0 +1,21 @@
+<div style="width: 100%;">
+    <div class="Title">
+        Submissions
+    </div>
+    <div class="interact">
+        <div class="search">
+            <input type="text" placeholder="search..." #filter>
+            <p-dropdown formControlName="selectedForm" [options]="form" optionLabel="name" [autoDisplayFirst]="false" placeholder="Select Form" [style]="{'width':'200px'}"></p-dropdown>
+            <p-dropdown formControlName="selectedStatus" [options]="status" optionLabel="name" [autoDisplayFirst]="false" placeholder="Select Status" [style]="{'width':'200px'}"></p-dropdown>
+            <p-calendar placeholder="Select a Date"></p-calendar>
+        </div>
+        <div class="buttons">
+            <p-button (click)="onMapClick()" label="Map" ></p-button>
+            <p-button (click)="onListClick()" label="List"></p-button>
+            <div style="color: #1297e9; margin-left: 15px">
+                Export
+            </div>
+        </div>
+    </div>
+    <app-tasks [map]="Map"></app-tasks>
+</div>

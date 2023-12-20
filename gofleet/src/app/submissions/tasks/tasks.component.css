@@ -1,0 +1,19 @@
+.task-card {
+    display:flex;
+    justify-content: space-between;
+    border-color: rgb(217, 206, 206);
+    border-radius: 5px;
+    border-style: solid;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    margin-top: 5px;
+}
+
+.begin {
+    color: grey;
+    margin-right: 5px;
+}

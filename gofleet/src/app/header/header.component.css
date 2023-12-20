@@ -1,0 +1,28 @@
+.full {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: start;
+    padding-left: 2rem;
+    align-items: center;
+    background-color: #1297e9;
+}
+
+.Zendu {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 13%;
+}
+
+.click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}
