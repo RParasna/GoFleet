@@ -1,27 +1,12 @@
-# Gofleet
+This was created for the activity round of the Software Developer co-op position at GoFleet.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+Two imgages under the src folder (GoFleet List/Map Display) show the display of the map and list view when running ng serve.
 
-## Development server
+Main things that can be improved on (or added at a later time):
+    -adding markers for the maps display to show task addresses (or even dummy addresses)
+    -polishing out the buttons
+    -adding colors and borders for the statuses in list view
+    -adding the magnifying glass to the search field
+    -perhaps making the data responsive to the input of the search and status field
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Also note that ng build --prod will not work on the CLI as that command was depreciated, ng build --configuration production will build the product version.
