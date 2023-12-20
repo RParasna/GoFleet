@@ -17,3 +17,49 @@
     color: grey;
     margin-right: 5px;
 }
+
+
+.red {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-style: solid;
+    border-color: rgb(255, 27, 27);
+    color: rgb(255, 54, 54);
+    height: 40px;
+    width: 130px;
+    padding-top: 6px;
+    font-weight: bold;
+    background-color: rgb(255, 205, 205);
+    border-radius: 4px;
+}
+
+.green {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-style: solid;
+    border-color: green;
+    color: green;
+    height: 40px;
+    width: 130px;
+    padding-top: 6px;
+    font-weight: bold;
+    background-color: rgb(216, 233, 216);
+    border-radius: 4px;
+}
+
+.grey {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-style: solid;
+    border-color: grey;
+    color: grey;
+    height: 40px;
+    width: 130px;
+    padding-top: 6px;
+    font-weight: bold;
+    background-color: rgb(228, 228, 228);
+    border-radius: 4px;
+}

@@ -822,4 +822,4 @@ export class allTasks {
     getTasks() {
         return Promise.resolve(this.getTasksData());
     }
-};
+}

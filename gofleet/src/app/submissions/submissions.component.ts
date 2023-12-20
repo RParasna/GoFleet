@@ -4,6 +4,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 import { TasksComponent } from './tasks/tasks.component';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
 
 
 interface Forms {
@@ -17,7 +18,7 @@ interface Statuses {
 @Component({
   selector: 'app-submissions',
   standalone: true,
-  imports: [DropdownModule, CalendarModule, ButtonModule, TasksComponent, CommonModule], 
+  imports: [DropdownModule, CalendarModule, ButtonModule, TasksComponent, CommonModule, MatIconModule], 
   templateUrl: './submissions.component.html',
   styleUrl: './submissions.component.css'
 })

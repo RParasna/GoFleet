@@ -17,7 +17,7 @@
     </p-table>
 </div>
 <div style="display: flex; width: 100%">
-    <div *ngIf="map" style="width:30%; float:left">
+    <div *ngIf="map" style="width:40%; float:left">
         <div *ngFor="let data of mapTasks" class="task-card">
             <div>
                 <div style="font-weight: bold;">
@@ -45,13 +45,16 @@
                     <div class="begin">
                         Due Date: 
                     </div>
-                    <div style="color: red">
+                    <div style="color: red; font-weight: bold;">
                         {{data.shortDue}}
                     </div>
                 </div>
             </div>
-            <div>
-                {{data.status}}
+            <div [ngClass]="data.status==='Uncomplete'?'red' : data.status==='Unassigned' ? 'grey' : 'green'">
+                <mat-icon>circle</mat-icon>
+                <div style="margin-top: 2px;">
+                    {{data.status}}
+                </div>
             </div>
         </div>
     </div>

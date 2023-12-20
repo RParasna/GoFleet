@@ -1,4 +1,4 @@
-import { Component, Input, NgModule } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { TableModule } from 'primeng/table';
 import { Tasks } from '../../../Models/tasks';
 import { Cols } from '../../../Models/cols';
@@ -6,16 +6,17 @@ import { allTasks } from '../../../Service/tasks';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @Component({
   selector: 'app-tasks',
   standalone: true,
-  imports: [TableModule, CommonModule, ButtonModule, GoogleMapsModule],
+  imports: [TableModule, CommonModule, ButtonModule, GoogleMapsModule, MatIconModule],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })
-export class TasksComponent {
+export class TasksComponent implements OnInit{
   @Input() map: boolean;
   tasks!: Tasks[];
   mapTasks!: Tasks[];

@@ -4,15 +4,16 @@
     </div>
     <div class="interact">
         <div class="search">
-            <input type="text" placeholder="search..." #filter>
+            <input type="text" placeholder="Search..." #filter>
             <p-dropdown formControlName="selectedForm" [options]="form" optionLabel="name" [autoDisplayFirst]="false" placeholder="Select Form" [style]="{'width':'200px'}"></p-dropdown>
             <p-dropdown formControlName="selectedStatus" [options]="status" optionLabel="name" [autoDisplayFirst]="false" placeholder="Select Status" [style]="{'width':'200px'}"></p-dropdown>
             <p-calendar placeholder="Select a Date"></p-calendar>
         </div>
         <div class="buttons">
-            <p-button (click)="onMapClick()" label="Map" ></p-button>
-            <p-button (click)="onListClick()" label="List"></p-button>
-            <div style="color: #1297e9; margin-left: 15px">
+            <p-button  (click)="onMapClick()" label="Map" ></p-button>
+            <p-button  (click)="onListClick()" label="List"></p-button>
+            <div class="export" style="color: #1297e9; margin-left: 15px;">
+                <mat-icon>sim_card_download</mat-icon>
                 Export
             </div>
         </div>

@@ -40,6 +40,12 @@ input[type="text"] {
     margin-right: 4px;
     display: inline-block;
     width: 300px;
-  }
+}
 
+.export {
+    display: flex;
+    align-content: center;
+    color: #1297e9;
+    margin-left: 15px;
+}
   
